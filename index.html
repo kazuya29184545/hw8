@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="hw8.css" />
+    <title>jQuery stuff</title>
+  </head>
+  <body>
+    <h1>My hobbies</h1>
+    <ul id="menu">
+      <li class="ui-state-disabled"><div>Basketball (n/a)</div></li>
+      <li><div>Filmmaking</div></li>
+      <li><div>Anime</div></li>
+      <li>
+        <div>Movie</div>
+        <ul>
+          <li class="ui-state-disabled"><div>Interstellar</div></li>
+          <li><div>Inception</div></li>
+          <li><div>Aladin</div></li>
+        </ul>
+      </li>
+      <li><div>Tennis</div></li>
+      <li>
+        <div>Anime</div>
+        <ul>
+          <li>
+            <div>One Piece</div>
+            
+          </li>
+          <li>
+            <div>Jujutsu Kaisen</div>
+            
+          </li>
+          <li><div>Demon Slayer</div></li>
+        </ul>
+      </li>
+      <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+    </ul>
+
+    <!-- Checkbox -->
+
+    <div class="checkbox">
+      <h2>Check the most favorite one</h2>
+      <fieldset>
+        <label for="radio-1">One Piece</label>
+        <input type="radio" name="radio-1" id="radio-1" />
+        <label for="radio-2">Jujutsu Kaisen</label>
+        <input type="radio" name="radio-1" id="radio-2" />
+        <label for="radio-3">Demon Slayer</label>
+        <input type="radio" name="radio-1" id="radio-3" />
+      </fieldset>
+    </div>
+
+    <!-- Select menu -->
+
+    <div class="demo">
+      <h2>Sort your preference in movie</h2>
+      <form action="#selectMenu">
+        <fieldset>
+          <label for="speed">Select a genre</label>
+          <select name="speed" id="speed">
+            <option>Action</option>
+            <option>Comedy</option>
+            <option selected="selected">Human drama</option>
+            <option>Love romance</option>
+          </select>
+
+          <label for="files">Select a favorite country</label>
+          <select name="files" id="files">
+              <option value="jquery">US</option>
+              <option value="jqueryui">UK</option>
+              <option value="somefile">Korea</option>
+              <option value="someotherfile">
+                others
+              </option>
+            </optgroup>
+          </select>
+
+          <label for="salutation">Select a generation</label>
+          <select name="salutation" id="salutation">
+            <option disabled selected>Please pick one</option>
+            <option>~1970</option>
+            <option>1971~1980</option>
+            <option>1981~1990</option>
+            <option>1991~2000</option>
+            <option>2001~</option>
+          </select>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- Preference sort -->
+
+    <div class="button">
+        
+        <button>SAVE</button>
+       
+        
+    </div>
+    <script src="hw8.js"></script>
+  </body>
+</html>
